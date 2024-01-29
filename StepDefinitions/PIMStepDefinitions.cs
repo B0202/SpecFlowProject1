@@ -93,8 +93,8 @@ namespace SpecFlowProject1.StepDefinitions
         public void ThenTimeModulePageShouldBeDisplayed()
         {
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@class='oxd-topbar-header-title']")));
-            string Time_Act_title1 = driver.FindElement(By.XPath("//*[@class='oxd-topbar-header-title']")).Text;
-            Assert.AreEqual(Time_Exp_Title, Time_Act_title1);
+            string Time_Act_title2 = driver.FindElement(By.XPath("//*[@class='oxd-topbar-header-title']")).Text;
+            Assert.AreEqual(Time_Exp_Title, Time_Act_title2);
         }
 
 
